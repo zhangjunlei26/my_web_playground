@@ -1,2 +1,3 @@
-# my_web_playground
-my web playground
+# My Web Playground
+
+just for study new  javascript framework
