@@ -1,3 +1,6 @@
 [submodule "shared/polka"]
 	path = shared/polka
 	url = https://github.com/lukeed/polka.git
+[submodule "shared/fastify"]
+	path = shared/fastify
+	url = https://github.com/fastify/fastify.git
