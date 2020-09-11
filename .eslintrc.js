@@ -1,7 +1,7 @@
 module.exports = {
   extends: ['eslint-config-vue-prettier-airbnb-ro'],
   rules: {
-    'import/no-extraneous-dependencies': 'off',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'no-unused-vars': 'warn',
   },
 };
