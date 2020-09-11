@@ -1,0 +1,9 @@
+# Ignore All config files.
+gpackfile.js
+fastlanefile.js
+
+# Ignore all external files.
+static/**
+
+# element-ui 样式开发
+assets/element-ui/**

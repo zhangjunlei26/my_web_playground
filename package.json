@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "lint": "eslint {src,shared,examples}/**/*.{js,vue}",
     "fastify": "node examples/fastify/server.js",
     "polka": "node examples/polka/server.js"
   },
@@ -12,8 +13,21 @@
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "eslint-config-vue-prettier-airbnb-ro": "^0.0.3",
     "fastify": "^3.3.0",
+    "lint-staged": "^10.3.0",
     "polka": "^0.5.2",
-    "vite": "^1.0.0-rc.1"
+    "prettier": "^2.1.1",
+    "vite": "^1.0.0-rc.1",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }

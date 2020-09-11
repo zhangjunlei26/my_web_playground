@@ -4,3 +4,9 @@
 [submodule "shared/fastify"]
 	path = shared/fastify
 	url = https://github.com/fastify/fastify.git
+[submodule "shared/fastify-docs-chinese"]
+	path = shared/fastify-docs-chinese
+	url = https://github.com/fastify/docs-chinese.git
+[submodule "shared/eslint-config-vue-prettier-airbnb"]
+	path = shared/eslint-config-vue-prettier-airbnb
+	url = https://github.com/zhangjunlei26/eslint-config-vue-prettier-airbnb.git
